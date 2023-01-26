@@ -1,0 +1,165 @@
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(233, 47%, 7%);
+            font-size: 15px;
+        }
+        
+        #container {
+            display: flex;
+            width: 630px;
+            background-color: hsl(244, 38%, 16%);
+            color: white;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        /* typography */
+        
+        .description {
+            margin-left: 80px;
+            margin-top: 80px;
+            margin-right: 50px;
+        }
+        
+        .description h1 {
+            color: hsl(0, 0%, 100%);
+            padding-right: 100px;
+            font-size: 30px;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+        
+        .description h1 span {
+            color: hsl(277, 64%, 61%);
+        }
+        
+        .description p {
+            padding-right: 60px;
+            color: hsla(0, 0%, 100%, 0.75);
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .data {
+            display: flex;
+            flex-direction: row;
+            margin-top: 60px;
+        }
+        
+        .feeds {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .feeds h2 {
+            margin-bottom: 0;
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 700;
+            color: hsl(0, 0%, 100%);
+        }
+        
+        .feeds p {
+            margin-top: 8px;
+            color: hsla(0, 0%, 100%, 0.6);
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+        }
+        /* images styling */
+        
+        picture::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 32.2%;
+            left: 54%;
+            width: 21.7%;
+            height: 37%;
+            background-color: rgba(156, 16, 156, 0.5);
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 9px;
+            /* adjust the color and opacity as needed */
+        }
+        
+        picture img {
+            margin-right: 60px;
+            height: 100%;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        /* footer */
+        
+        .attribution {
+            margin-top: 650px;
+            font-size: 11px;
+            text-align: center;
+            color: white;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        /* media queries */
+        
+        @media screen and (max-width:374px) {
+            #container {
+                flex-direction: column;
+                width: 300px;
+                height: 700px;
+                margin-left: 90px;
+            }
+            .description {
+                margin-left: 40px;
+                padding-top: 100px;
+            }
+            .description h1 {
+                padding-left: 15px;
+                padding-right: 6px;
+                font-size: 20px;
+            }
+            .description p {
+                padding-right: 0;
+                text-align: center;
+            }
+            .data {
+                flex-direction: column;
+            }
+            .feeds {
+                text-align: center;
+            }
+            picture img {
+                height: 40%;
+                position: relative;
+                bottom: 140%;
+            }
+        }
+        
+        @media screen and (max-width:1440px) {
+            picture::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 31.5%;
+                left: 58.2%;
+                width: 43.8%;
+                height: 123.9%;
+                background-color: rgba(156, 16, 156, 0.5);
+                border-top-right-radius: 9px;
+            }
+        }
+        
+        @media screen and (max-width:768px) {
+            .description {
+                padding-bottom: 50px;
+            }
+            picture::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 19.5%;
+                left: 72.5%;
+                width: 72%;
+                height: 63%;
+                background-color: rgba(156, 16, 156, 0.5);
+                border-top-right-radius: 9px;
+            }
+        }
